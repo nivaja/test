@@ -1,0 +1,1 @@
+web: gunicorn MS_Transprotation.wsgi --log-file
