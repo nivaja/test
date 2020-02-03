@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -25,7 +24,7 @@ SECRET_KEY = 'c@hj-!#j2dk@1xa00%6((28&ef89q3q2f#yfg2lc$u7uk%to1*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,7 +124,6 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     '/static/',
 ]
-django_heroku.settings(locals())
 
 
 
